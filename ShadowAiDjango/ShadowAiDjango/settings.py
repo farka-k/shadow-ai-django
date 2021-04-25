@@ -57,7 +57,11 @@ CORS_ORIGIN_ALLOW_ALL=False
 
 CORS_ORIGIN_WHITELIST=(
     'http://localhost:8081',
+    'http://localhost:8082'
 )
+
+MEDIA_URL='/media/'
+MEDIA_ROOT=os.path.join(BASE_DIR,'media')
 
 ROOT_URLCONF = 'ShadowAiDjango.urls'
 

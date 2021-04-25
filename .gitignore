@@ -1,4 +1,9 @@
 /venv
+/ShadowAiDjango/ShadowAiRest/migrations
+/ShadowAiDjango/media
+__pycache__/
+*.pyc
+*.h5
 
 # Editor directories and files
 .idea
