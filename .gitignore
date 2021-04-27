@@ -4,6 +4,9 @@
 __pycache__/
 *.pyc
 *.h5
+/ShadowAiDjango/*.png
+/ShadowAiDjango/*.jpg
+/ShadowAiDjango/*.bmp
 
 # Editor directories and files
 .idea
