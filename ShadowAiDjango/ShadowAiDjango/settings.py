@@ -25,7 +25,7 @@ SECRET_KEY = '724qpgjh3z!7d&+5_u5ya2fdfld^y4%nzg&_+1^%w!#$%x0lxh'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['192.168.50.150','http://shadow-ai-vue.herokuapp.com']
 
 
 # Application definition
@@ -56,8 +56,9 @@ MIDDLEWARE = [
 CORS_ORIGIN_ALLOW_ALL=False
 
 CORS_ORIGIN_WHITELIST=(
+    'http://192.168.50.150:8081',
     'http://localhost:8081',
-    'http://localhost:8082'
+    'http://shadow-ai-vue.herokuapp.com'
 )
 
 MEDIA_URL='/media/'
