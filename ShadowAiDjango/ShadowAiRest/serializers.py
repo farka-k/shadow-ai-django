@@ -52,15 +52,15 @@ class ProcessedImageSerializer(serializers.ModelSerializer):
         fields=(
             'id',
             'name',
-            'image',
+            'imagepath',
             'origin'
         )
     
-    def create(self,imagedata,ext,origin_id):
-        image_name=str(uuid.uuid4())
-        result, created= ProcessedImage.obejcts.get_or_create(
-            name=image_name,
-            image=ContentFile(imagedata, name=image_name+ext),
+    def create(self,filename,ext,origin_id):
+        prefix='processed/'
+        result, created= ProcessedImage.objects.get_or_create(
+            name=filename,
+            imagepath=prefix+filename,
             origin=origin_id
             )
         return result
