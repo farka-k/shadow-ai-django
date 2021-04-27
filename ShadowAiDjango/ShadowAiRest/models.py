@@ -21,5 +21,6 @@ class Image(models.Model):
 
 class ProcessedImage(models.Model):
     name=models.CharField(max_length=500)
-    image=models.ImageField(upload_to="processed",blank=True,height_field=None,width_field=None,max_length=500)
+    imagepath=models.CharField(max_length=500)
+    #image=models.ImageField(upload_to="processed",blank=True,height_field=None,width_field=None,max_length=500)
     origin=models.IntegerField()
